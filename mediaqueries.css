@@ -7,6 +7,9 @@
     .about-containers{
         flex-wrap: wrap;
     }
+    #projects {
+        height: fit-content;
+    }
 
 }
 @media screen and (max-width: 1200px)
@@ -67,6 +70,9 @@
     .btn-container{
         flex-wrap: wrap;
     }
+    .contact-info-container {
+        margin: 0;
+    }
     .contact-info-container p,
     .nav-links li a{
         font-size: 1rem;
@@ -84,7 +90,7 @@
     }
     .section__pic-container{
         width: auto;
-        height: 46vh;
+        height: 46vw;
         justify-content: center;
     }
     .section__text__p2{
@@ -94,6 +100,7 @@
         font-size: 2rem;
     }
     .text-container{
-        text-align: center;
+        text-align: justify;
     }
 }
+
