@@ -288,7 +288,7 @@ section {
 }
 
 .arrow {
-  position: absolute;
+  position:absolute;
   right: -5rem;
   bottom: 2.5rem;
 }
@@ -345,7 +345,6 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
   gap: 0.5rem;
 }
 
