@@ -36,9 +36,6 @@
         </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="/assets/profile-pic.png" alt="Idan Rodrigez profile pic">
-        </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Idan Rodrigez</h1>
@@ -47,7 +44,7 @@
                 <button class="btn btn-color-2" onclick="window.open('./assets/Idans-resume.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
             </div>
-            <div id="socials-containers">
+            <div id="socials-container">
                 <img src="./assets/linkedin.png" 
                 alt="My linkedIn profile"
                 class="icon" onclick="location.href='https://www.linkedin.com/in/idanrodrigez/'">
@@ -56,11 +53,14 @@
                 class="icon" onclick="location.href='https://github.com/IdanRodri17'">
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#about'"/>
     </section>
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
+            <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="experience icon"
@@ -72,11 +72,19 @@
                         <img src="./assets/education.png" alt="education icon"
                         class="icon">
                         <h3>Education</h3>
-                        <p>B.Sc. bachelors Degree <br /></p>
+                        <p>B.Sc. bachelors Degree</p>
                     </div>
                 </div>
                 <div class="text-container">
                 <p>
+                    I'm a passionate software developer with strong front-end and back-end skills, 
+                    along with expertise in machine learning and cyber security. I build efficient,
+                    scalable, and user-friendly applications that integrate intelligent algorithms 
+                    and robust security measures. I continuously adopt emerging technologies to keep
+                    my solutions cutting-edge. I thrive in collaborative team environments where my clear
+                    communication helps turn complex ideas into actionable projects. My enthusiasm for
+                    software development drives me to deliver innovative and impactful solutions. Overall,
+                     I'm dedicated, motivated, and excited to contribute my skills to dynamic group projects.
                 </p>
                 </div>
             </div>
@@ -243,6 +251,7 @@
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github
                     </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo
                     </button>
                 </div>
             </div>
@@ -254,7 +263,9 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Project Two</h2>
                 <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github
                     </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo
                     </button>
                 </div>
             </div>
@@ -266,7 +277,9 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Project Three</h2>
                 <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github
                     </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo
                     </button>
                 </div>
             </div>
@@ -275,7 +288,7 @@
         <img src="./assets/arrow.png"
         alt="Arrow icon" 
         class="icon arrow"
-        onclick="location.href='./#projects'"/>
+        onclick="location.href='./#contact'"/>
     </section>
     <section id = "contact">
         <p class="section__text__p1">Get in Touch</p>
