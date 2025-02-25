@@ -185,6 +185,11 @@ section {
   font-weight: 600;
 }
 
+.section__text {
+  font-weight: 600;
+  text-align: center;
+}
+
 .section__text__p1 {
   text-align: center;
 }
@@ -193,7 +198,10 @@ section {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
-
+.section__text__p3{
+  text-align: center;
+  margin-top: 5%;
+}
 .title {
   font-size: 3rem;
   text-align: center;
@@ -306,6 +314,7 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
+  font-weight: 400;
 }
 
 .section__pic-container {
@@ -350,6 +359,10 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+.experience-details-container p{
+  margin-bottom: 1rem;
 }
 
 /* PROJECTS SECTION */
