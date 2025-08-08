@@ -28,6 +28,9 @@ function toggleTheme() {
     themeButtons.forEach(button => {
         button.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
     });
+    
+    // Immediately update navbar background for current scroll position
+    updateNavbarBackground();
 }
 
 // Load saved theme on page load
@@ -78,25 +81,24 @@ function initSmoothScrolling() {
     });
 }
 
+// Function to update navbar background based on current theme and scroll position
+function updateNavbarBackground() {
+    const navbar = document.querySelector('nav');
+    const currentScrollY = window.scrollY;
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    
+    if (currentScrollY > 100) {
+        navbar.style.background = isDark ? 'rgba(15, 23, 42, 0.95)' : 'rgba(255, 255, 255, 0.95)';
+    } else {
+        navbar.style.background = isDark ? 'rgba(15, 23, 42, 0.9)' : 'rgba(255, 255, 255, 0.9)';
+    }
+}
+
 // Simplified navbar scroll effect - no hide/show animation
 function initNavbarScrollEffect() {
-    const navbar = document.querySelector('nav');
-    
-    window.addEventListener('scroll', () => {
-        const currentScrollY = window.scrollY;
-        
-        if (currentScrollY > 100) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            if (document.documentElement.getAttribute('data-theme') === 'dark') {
-                navbar.style.background = 'rgba(17, 24, 39, 0.95)';
-            }
-        } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.9)';
-            if (document.documentElement.getAttribute('data-theme') === 'dark') {
-                navbar.style.background = 'rgba(17, 24, 39, 0.9)';
-            }
-        }
-    });
+    window.addEventListener('scroll', updateNavbarBackground);
+    // Initial call to set correct background on page load
+    updateNavbarBackground();
 }
 
 // Static description - no animation needed

@@ -291,9 +291,15 @@
 
 @media screen and (max-width: 600px)
 {
-    #contact,
+    #contact{
+        height: auto;
+        min-height: 40vh;
+        padding: 5rem 1rem;
+    }
     footer{
-        height: 10vh;
+        height: auto;
+        min-height: 10vh;
+        padding: 2rem 1rem;
     }
     #profile{
         height: auto;
@@ -316,9 +322,12 @@
         gap: 1rem;
     }
     .contact-info-container {
-        margin: 0;
+        margin: 0.5rem;
         justify-content: center;
-        padding: 0.8rem;
+        padding: 1.5rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
     .btn-container{
         flex-wrap: wrap;
@@ -328,13 +337,14 @@
     }
     .contact-info-container p,
     .nav-links li a{
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
     .contact-info-container {
-        min-height: 60px;
-        border-radius: 12px;
+        min-height: 80px;
+        border-radius: 15px;
         background: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(10px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     [data-theme="dark"] .contact-info-container {
         background: rgba(15, 23, 42, 0.8);
@@ -730,6 +740,41 @@
     .header-name-btn {
         padding: 0.7rem 1.2rem;
         font-size: 0.9rem;
+    }
+}
+
+/* iPhone 11 Pro Max and similar large phones */
+@media screen and (max-width: 600px) and (min-width: 400px) {
+    .contact-info-container {
+        min-height: 100px;
+        padding: 2rem 1.5rem;
+        margin: 1rem 0.5rem;
+    }
+    
+    .contact-info-container p {
+        font-size: 1.2rem;
+    }
+    
+    .contact-info-container .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    #contact {
+        min-height: 50vh;
+        padding: 6rem 1rem;
+    }
+    
+    .contact-info-upper-container {
+        gap: 2rem;
+        padding: 2rem 1rem;
+        margin: 2rem auto;
+        max-width: 400px;
+    }
+    
+    footer {
+        padding: 3rem 1rem;
+        font-size: 1rem;
     }
 }
 
