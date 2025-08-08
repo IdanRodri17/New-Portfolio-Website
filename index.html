@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
 <body>
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
     <nav id="desktop-nav">
-        <div class="logo">Idan Rodrigez</div>
         <div>
             <ul class="nav-links">
+                <li><a href="#" class="logo" onclick="scrollToTop()">Idan Rodrigez</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button></li>
             </ul>
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Idan Rodrigez</div>
+        <div class="logo" onclick="scrollToTop()">Idan Rodrigez</div>
         <div class="hamburger-menu">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button>
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -29,17 +35,21 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
     <section id="profile">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Idan Rodrigez</h1>
-            <p class="section__text__p2">Software Developer Student</p>
+            <p class="section__text__p2">Full-Stack Developer & Computer Science Graduate</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Idans-resume.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
@@ -52,19 +62,15 @@
                 alt="My Github profile"
                 class="icon" onclick="location.href='https://github.com/IdanRodri17'">
             </div>
-            <p class="section__text__p3">Seeking Software Development
-                Experience Eager to learn and contribute to real
-                world projects, I am a dedicated student with a
-                strong interest in software development. I am
-                enthusiastic about working closely with senior
-                engineers and team members to support diverse
-                software development tasks and gain valuable
-                hands-on experience in the field</p>
+            <p class="section__text__p3 hero-description">Computer Science graduate with a passion for software development and machine learning. Driven to transform ideas into impactful solutions through clean, innovative code.</p>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='./#about'"/>
     </section>
     <section id="about">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -74,22 +80,21 @@
                         <img src="./assets/experience.png" alt="experience icon"
                         class="icon">
                         <h3>Experience</h3>
-                        <p>2+ years <br />of learning and building Projects</p>
+                        <p>Fresh Graduate <br />with 3+ years of hands-on project experience</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="education icon"
                         class="icon">
                         <h3>Education</h3>
-                        <p>B.Sc. bachelors Degree</p>
+                        <p>B.Sc. Computer Science <br />Degree (2025)</p>
                     </div>
                 </div>
                 <div class="text-container">
                 <p>
-                    I'm a passionate third year software developer student with strong front-end and back-end skills, 
-                    along with expertise in machine learning and cyber security. I love to always learn new technologies to keep
-                    my solutions cutting-edge. I thrive in collaborative team environments where my clear
-                    communication helps turn complex ideas into actionable projects.Overall,
-                     I'm dedicated, motivated,love to learn and excited to contribute my skills to dynamic group projects.
+                    Computer Science graduate specializing in full-stack development and artificial intelligence. 
+                    I combine strong technical skills with excellent problem-solving abilities to deliver scalable, 
+                    user-focused solutions. A collaborative team player who thrives in fast-paced environments and 
+                    stays current with the latest technologies to drive innovation and business growth.
                 </p>
                 </div>
             </div>
@@ -97,167 +102,27 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='./#experience'"/>
     </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>Java Script</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>C</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>C#</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>Python</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>Machine learning</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>Deep learning</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Cyber Security</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>Linux</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>Network Basics</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>Cryptography</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon" 
-                            class="icon"/>
-                            <div>
-                                <h3>Attacks and Defense</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png"
-            alt="Arrow icon" 
-            class="icon arrow"
-            onclick="location.href='./#projects'"/>
-    </section>
     <section id="projects">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
+            <div class="about-containers projects-grid">
             <div class="details-container color-container">
                 <div class="article-container">
                     <img src="./assets/project-1.png" alt="Project 1" 
                     class="project-img">
 
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
-                <p>An object oriented game on windows form- car race game in c# inclouding heritage</p>
+                <h2 class="experience-sub-title project-title">C# Car Racing Game</h2>
+                <p>Object-oriented Windows Forms game built in C# featuring inheritance, real-time gameplay mechanics, and interactive racing elements</p>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IdanRodri17/C-sharp-Car-Race-Game'">Github
                     </button>
-                    
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('./assets/project-demo-1.pdf')">View Demo
+                    </button>
                 </div>
             </div>
             <div class="details-container color-container">
@@ -266,12 +131,13 @@
                     class="project-img">
 
                 </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
-                <p>A machine learning Model that predicts house pricing in california using linear regression</p>
+                <h2 class="experience-sub-title project-title">California House Price Predictor</h2>
+                <p>Machine learning model built with Python and scikit-learn that predicts California house prices using linear regression, data preprocessing, and feature engineering techniques</p>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IdanRodri17/Machine-learning'">Github
                     </button>
-                    
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('./assets/project-demo-2.pdf')">View Demo
+                    </button>
                 </div>
             </div>
             <div class="details-container color-container">
@@ -280,13 +146,29 @@
                     class="project-img">
 
                 </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
-                <p>software engineering Proccess project, with diagrams like class diagram, use-case diagram and sequence diagram</p>
+                <h2 class="experience-sub-title project-title">Software Engineering Documentation</h2>
+                <p>Comprehensive software engineering process documentation featuring UML diagrams including class diagrams, use-case diagrams, sequence diagrams, and system architecture design</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/SoftwareEngineering.pdf')">Github
+                    </button>
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('./assets/SoftwareEngineering.pdf')">View Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 4"
+                    class="project-img">
+
+                </div>
+                <h2 class="experience-sub-title project-title">Full-Stack Web Application</h2>
+                <p>Modern web application built with React, Node.js, and MongoDB featuring user authentication, real-time updates, and responsive design</p>
 
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/SoftwareEngineering.pdf')">PDF
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Github
                     </button>
-                    
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='#'">Live Demo
+                    </button>
                 </div>
             </div>
         </div>
@@ -294,9 +176,262 @@
         <img src="./assets/arrow.png"
         alt="Arrow icon" 
         class="icon arrow"
-        onclick="location.href='./#contact'"/>
+        onclick="location.href='./#experience'"/>
+    </section>
+    <section id="certifications">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <p class="section__text__p1">Professional</p>
+        <h1 class="title">Certifications & Achievements</h1>
+        <div class="certifications-container">
+            <div class="certifications-grid">
+                <div class="certification-card" data-category="web">
+                    <div class="cert-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg" alt="Udemy">
+                    </div>
+                    <h3>Full-Stack Web Development Bootcamp</h3>
+                    <p class="cert-issuer">Udemy</p>
+                    <p class="cert-date">2024</p>
+                    <p class="cert-description">Complete web development with HTML, CSS, JavaScript, React, Node.js, and databases</p>
+                    <div class="cert-btn-container">
+                        <button class="btn btn-cert" onclick="window.open('#', '_blank')">View Certificate</button>
+                    </div>
+                </div>
+                
+                <div class="certification-card" data-category="cloud">
+                    <div class="cert-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+                    </div>
+                    <h3>AWS Solutions Architect</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-date">2024</p>
+                    <p class="cert-description">Cloud architecture design, implementation, and best practices for scalable solutions</p>
+                    <div class="cert-btn-container">
+                        <button class="btn btn-cert" onclick="window.open('#', '_blank')">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <img src="./assets/arrow.png"
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#projects'"/>
+    </section>
+    <section id="experience">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+            <div class="skills-categories">
+                <div class="category-header">
+                    <h2 class="category-title">Frontend Technologies</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-category="frontend">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            </div>
+                            <h3>HTML5</h3>
+                            <p>Expert</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="frontend">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            </div>
+                            <h3>CSS3</h3>
+                            <p>Expert</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="frontend">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            </div>
+                            <h3>JavaScript</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="frontend">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                            </div>
+                            <h3>React</h3>
+                            <p>Learning</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-header">
+                    <h2 class="category-title">Backend & Programming</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-category="backend">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            </div>
+                            <h3>Python</h3>
+                            <p>Advanced</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="backend">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                            </div>
+                            <h3>C</h3>
+                            <p>Expert</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="backend">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                            </div>
+                            <h3>C#</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="backend">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                            </div>
+                            <h3>Node.js</h3>
+                            <p>Learning</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="backend">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                            </div>
+                            <h3>C++</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-header">
+                    <h2 class="category-title">AI & Machine Learning</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-category="ai">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                            </div>
+                            <h3>TensorFlow</h3>
+                            <p>Advanced</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="ai">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                            </div>
+                            <h3>PyTorch</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="ai">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
+                            </div>
+                            <h3>Scikit-learn</h3>
+                            <p>Advanced</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="ai">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                            </div>
+                            <h3>Pandas</h3>
+                            <p>Advanced</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-header">
+                    <h2 class="category-title">Databases & Cloud</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-category="database">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            </div>
+                            <h3>MySQL</h3>
+                            <p>Expert</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="database">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                            </div>
+                            <h3>PostgreSQL</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="database">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                            </div>
+                            <h3>MongoDB</h3>
+                            <p>Learning</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="database">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+                            </div>
+                            <h3>AWS</h3>
+                            <p>Learning</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-header">
+                    <h2 class="category-title">Development Tools</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-category="tools">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            </div>
+                            <h3>Git</h3>
+                            <p>Expert</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="tools">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                            </div>
+                            <h3>GitHub</h3>
+                            <p>Expert</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="tools">
+                            <div class="skill-icon">
+                                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman">
+                            </div>
+                            <h3>Postman</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        
+                        <div class="skill-card" data-category="tools">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM">
+                            </div>
+                            <h3>NPM</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png"
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#certifications'"/>
     </section>
     <section id = "contact">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
@@ -319,16 +454,6 @@
         </div>
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
         <p>Copyright &#169; 2025 Idan Rodrigez, All Right Reserved</p>
     </footer>
     <script src="script.js"></script>
