@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idan Rodrigez Portfolio</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://cdn.jsdelivr.net https://upload.wikimedia.org https://www.vectorlogo.zone; script-src 'self' 'unsafe-inline'; connect-src 'self';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
@@ -17,8 +21,8 @@
                 <li><a href="#" class="logo" onclick="scrollToTop()">Idan Rodrigez</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Skills</a></li>
                 <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#experience">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button></li>
             </ul>
@@ -36,8 +40,8 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -57,10 +61,10 @@
             <div id="socials-container">
                 <img src="./assets/linkedin.png" 
                 alt="My linkedIn profile"
-                class="icon" onclick="location.href='https://www.linkedin.com/in/idanrodrigez/'">
+                class="icon" onclick="window.open('https://www.linkedin.com/in/idanrodrigez/', '_blank')">
                 <img src="./assets/github.png" 
                 alt="My Github profile"
-                class="icon" onclick="location.href='https://github.com/IdanRodri17'">
+                class="icon" onclick="window.open('https://github.com/IdanRodri17', '_blank')">
             </div>
             <p class="section__text__p3 hero-description">Computer Science graduate with a passion for software development and machine learning. Driven to transform ideas into impactful solutions through clean, innovative code.</p>
         </div>
@@ -112,62 +116,62 @@
             <div class="about-containers projects-grid">
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-1.png" alt="Project 1" 
+                    <img src="./assets/experts.png" alt="Project 1" 
                     class="project-img">
 
                 </div>
-                <h2 class="experience-sub-title project-title">C# Car Racing Game</h2>
-                <p>Object-oriented Windows Forms game built in C# featuring inheritance, real-time gameplay mechanics, and interactive racing elements</p>
+                <h2 class="experience-sub-title project-title">The Experts Of Painting</h2>
+                <p>Built an automated, mobile-optimized portfolio site using React, Tailwind CSS, and FastAPI, with Google Drive integration and a GitHub Actions + Netlify pipeline for daily updates.</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IdanRodri17/C-sharp-Car-Race-Game'">Github
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/IdanRodri17/The-Experts-Of-Painting', '_blank')">Github
                     </button>
-                    <button class="btn btn-color-1 project-btn" onclick="window.open('./assets/project-demo-1.pdf')">View Demo
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('https://theexpertspaintshop.com/', '_blank')">View Demo
                     </button>
                 </div>
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-2.png" alt="Project 2"
+                    <img src="./assets/PlantPal.png" alt="Project 2"
                     class="project-img">
 
                 </div>
-                <h2 class="experience-sub-title project-title">California House Price Predictor</h2>
-                <p>Machine learning model built with Python and scikit-learn that predicts California house prices using linear regression, data preprocessing, and feature engineering techniques</p>
+                <h2 class="experience-sub-title project-title">PlantPal – Android App</h2>
+                <p>PlantPal – Android App for Plant Care Management: Built in Kotlin with MVVM, Retrofit, Room, and Hilt, integrating a REST API and Glide for plant data and images. Added a favorites list, smooth navigation, and custom watering reminders using WorkManager.</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IdanRodri17/Machine-learning'">Github
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/IdanRodri17/PlantPal', '_blank')">Github
                     </button>
-                    <button class="btn btn-color-1 project-btn" onclick="window.open('./assets/project-demo-2.pdf')">View Demo
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('https://www.youtube.com/watch?v=hU3Em6RoTjY', '_blank')">View Demo
                     </button>
                 </div>
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-3.png" alt="Project 3"
+                    <img src="./assets/DeepLearningModel.png" alt="Project 3"
                     class="project-img">
 
                 </div>
-                <h2 class="experience-sub-title project-title">Software Engineering Documentation</h2>
-                <p>Comprehensive software engineering process documentation featuring UML diagrams including class diagrams, use-case diagrams, sequence diagrams, and system architecture design</p>
+                <h2 class="experience-sub-title project-title">Deep Learning for Skin Condition Detection</h2>
+                <p>Developed a ResNet-based multitask CNN in PyTorch to classify dermatology images, achieving 87% accuracy on multi-label tasks. Leveraged transfer learning, data augmentation, and Grad-CAM for visual explanations to enhance model interpretability and performance.</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/SoftwareEngineering.pdf')">Github
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/IdanRodri17/Skin-Lesion-Classification/tree/main/Skin-Lesion-Classification-main', '_blank')">Github
                     </button>
-                    <button class="btn btn-color-1 project-btn" onclick="window.open('./assets/SoftwareEngineering.pdf')">View Demo
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('https://skin-lesion-proj.netlify.app/', '_blank')">View Demo
                     </button>
                 </div>
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-3.png" alt="Project 4"
+                    <img src="./assets/project-1.png" alt="Project 4"
                     class="project-img">
 
                 </div>
-                <h2 class="experience-sub-title project-title">Full-Stack Web Application</h2>
-                <p>Modern web application built with React, Node.js, and MongoDB featuring user authentication, real-time updates, and responsive design</p>
+                <h2 class="experience-sub-title project-title">Object-Oriented Car Race Game</h2>
+                <p>Developed a Windows Forms game in C# demonstrating object-oriented programming principles, including inheritance, polymorphism, and encapsulation. Designed interactive gameplay with multiple car types, obstacles, and prizes, applying clean code structure and modular design.</p>
 
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Github
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/IdanRodri17/C-sharp-Car-Race-Game', '_blank')">Github
                     </button>
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='#'">Live Demo
+                    <button class="btn btn-color-1 project-btn" onclick="window.open('https://www.youtube.com/shorts/ntoCBxlnCPQ', '_blank')">View Demo
                     </button>
                 </div>
             </div>
@@ -192,10 +196,10 @@
                     </div>
                     <h3>Full-Stack Web Development Bootcamp</h3>
                     <p class="cert-issuer">Udemy</p>
-                    <p class="cert-date">2024</p>
+                    <p class="cert-date">2025</p>
                     <p class="cert-description">Complete web development with HTML, CSS, JavaScript, React, Node.js, and databases</p>
                     <div class="cert-btn-container">
-                        <button class="btn btn-cert" onclick="window.open('#', '_blank')">View Certificate</button>
+                        <button class="btn btn-cert" onclick="window.open('#', '_blank')">In progress(3 weeks)</button>
                     </div>
                 </div>
                 
@@ -208,7 +212,7 @@
                     <p class="cert-date">2024</p>
                     <p class="cert-description">Cloud architecture design, implementation, and best practices for scalable solutions</p>
                     <div class="cert-btn-container">
-                        <button class="btn btn-cert" onclick="window.open('#', '_blank')">View Certificate</button>
+                        <button class="btn btn-cert" onclick="window.open('#', '_blank')">In progress(5 weeks)</button>
                     </div>
                 </div>
             </div>
@@ -270,7 +274,7 @@
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                             </div>
                             <h3>Python</h3>
-                            <p>Advanced</p>
+                            <p>Intermediate</p>
                         </div>
                         
                         <div class="skill-card" data-category="backend">
@@ -286,7 +290,7 @@
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
                             </div>
                             <h3>C#</h3>
-                            <p>Intermediate</p>
+                            <p>Advanced</p>
                         </div>
                         
                         <div class="skill-card" data-category="backend">
@@ -294,7 +298,7 @@
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
                             </div>
                             <h3>Node.js</h3>
-                            <p>Learning</p>
+                            <p>Advanced</p>
                         </div>
                         
                         <div class="skill-card" data-category="backend">
@@ -369,7 +373,7 @@
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
                             </div>
                             <h3>MongoDB</h3>
-                            <p>Learning</p>
+                            <p>Intermediate</p>
                         </div>
                         
                         <div class="skill-card" data-category="database">
@@ -439,7 +443,7 @@
                 <img src="./assets/linkedin.png"
                 alt="linkedIn icon"
                 class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/idanrodrigez/">My linkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/idanrodrigez/" target="_blank" rel="noopener noreferrer">My linkedIn</a></p>
                 
 
             </div>

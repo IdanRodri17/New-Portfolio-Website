@@ -733,6 +733,15 @@ section:first-of-type {
   to { filter: drop-shadow(0 0 15px rgba(37, 99, 235, 0.6)); }
 }
 
+/* Explicit H1 font sizes to fix Lighthouse best practices warning */
+h1 {
+  font-size: 3rem !important;
+}
+
+section h1, article h1, aside h1, nav h1 {
+  font-size: 3rem !important;
+}
+
 /* PARTICLES DISABLED */
 .particles {
   display: none !important;
