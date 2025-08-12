@@ -371,7 +371,7 @@
         font-size: 1.25rem;
     }
     .title{
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
     .text-container{
         text-align: center;
